@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_infos",
+  "info": {
+    "singularName": "student-info",
+    "pluralName": "student-infos",
+    "displayName": "StudentInfo"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student_no": {
+      "type": "string",
+      "unique": true
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "middle_name": {
+      "type": "string"
+    },
+    "course": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female"
+      ]
+    },
+    "address": {
+      "type": "text"
+    },
+    "age": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
